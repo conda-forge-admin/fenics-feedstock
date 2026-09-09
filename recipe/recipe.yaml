@@ -201,7 +201,7 @@ outputs:
         - ${{ pin_subpackage("fenics-dolfin", exact=True) }}
     tests:
       - script:
-          - bash "${RECIPE_DIR}/parent/test-fenics.sh"
+          - bash test-fenics.sh
         files:
           recipe:
             - test-fenics.sh
